@@ -469,7 +469,7 @@ class AdvancedBanglaTextEditor:
                         self.stop_voice_typing()
 
                 except sr.UnknownValueError:
-                    self.status_bar.config(text="Developing by Rabiul Islam student of CSE")
+                    self.status_bar.config(text="Developing by Mehedi hasan student of CSE")
                 except sr.RequestError as e:
                     self.status_bar.config(text=f"Speech recognition error: {e}")
                     self.stop_voice_typing()
