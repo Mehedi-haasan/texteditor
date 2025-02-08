@@ -11,6 +11,7 @@ import speech_recognition as sr
 import threading
 
 pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
+
 class AdvancedBanglaTextEditor:
     def __init__(self, root):
         self.root = root
@@ -25,7 +26,7 @@ class AdvancedBanglaTextEditor:
         self.text_area.pack(fill=tk.BOTH, expand=1, padx=10, pady=10)
 
         # Status Bar
-        self.status_bar = tk.Label(self.root, text="Developing by Rabiul Islam student of CSE", anchor="w", relief=tk.SUNKEN, font=("Nirmala UI", 10))
+        self.status_bar = tk.Label(self.root, text="Developing by Mehedi hasan student of CSE", anchor="w", relief=tk.SUNKEN, font=("Nirmala UI", 10))
         self.status_bar.pack(side=tk.BOTTOM, fill=tk.X)
 
         # Menu Bar
@@ -428,7 +429,7 @@ class AdvancedBanglaTextEditor:
                 self.text_area.insert(tk.END, "\n" + text)
 
                 # Update status bar
-                self.status_bar.config(text="Developing by Rabiul Islam student of CSE")
+                self.status_bar.config(text="Developing by Mehedi hasan student of CSE")
 
             except Exception as e:
                 messagebox.showerror("Error", f"Failed to extract text: {str(e)}")
